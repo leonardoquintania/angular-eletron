@@ -1,0 +1,20 @@
+<div class="po-wrapper">
+  <po-toolbar p-title="Dashboard"></po-toolbar>
+
+  <po-menu [p-menus]="menus"></po-menu>
+
+  <po-page-default>
+    <p> Gráfico </p>
+    <po-chart
+      [p-series]="[{ category: 'Angular', value: 30 }, 
+                   { category: 'React'  , value: 60 },
+                   { category: 'Vue.js' , value: 10 }]">
+    </po-chart>
+
+    <po-button
+      p-label="Sobre"
+      (p-click)="playPingPong()">
+    </po-button>
+
+  </po-page-default>
+</div>
